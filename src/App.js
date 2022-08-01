@@ -19,11 +19,26 @@ const items = [
 	},
 ];
 
+const options = [
+	{
+		label: 'The color red',
+		value: 'red',
+	},
+	{
+		label: 'The color green',
+		value: 'green',
+	},
+	{
+		label: 'A shade of blue',
+		value: 'blue',
+	},
+];
+
 class App extends React.Component {
 	render() {
 		return (
 			<div className='container'>
-				<Dropdown />
+				<Dropdown options={options} />
 			</div>
 		);
 	}
