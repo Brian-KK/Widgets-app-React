@@ -13,7 +13,7 @@ const Convert = ({ language, text }) => {
 					params: {
 						q: text,
 						target: language.value,
-						key: 'AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM',
+						key: process.env.REACT_APP_API_KEY,
 					},
 				}
 			);
